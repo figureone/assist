@@ -20,11 +20,11 @@ gulp.task('optipng', function() {
 
 // Concat & Minify JS Files
 gulp.task('scripts', function(){
-	return gulp.src('assets/js/*.js')
-		.pipe(concat('main.js'))
+	return gulp.src(['assets/js/jquery.min.js', 'assets/js/bootstrap.min.js', 'assets/js/lunr.min.js', 'assets/js/set-query.js', 'assets/js/main.js', 'assets/js/modalizer.js', 'assets/js/search.js', 'assets/js/results.js'])
+		.pipe(concat('all.js'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest('build/js'));
+		.pipe(gulp.dest('dist/js/'));
 });
 
 // Remove console and debugger statements
