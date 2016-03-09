@@ -1,0 +1,14 @@
+/* Base styling */
+/* ----------------------------------------------------------*/
+body {
+  font-size: 16px;
+  color: $base-text-color;
+  background-color: $main-bg-color;
+  font-family: 'Museo Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+ul {
+	list-style-type: none;
+}
